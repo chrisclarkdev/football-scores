@@ -20,25 +20,36 @@
 .teamName{
   font-size: calc(0.5em + 1vmin);
 }
+
+.leagueHeading{
+  background: #282c34;
+  padding: 1px;
+}
+.leagueHeading h3{
+  color: rgb(204, 199, 199);
+}
 .matchDate {
   font-size: calc(0.5em + 2vmin);
-
 }
-.App-link {
-  color: #61dafb;
+body {
+  margin: 0;
+  padding: 0;
 }
-
 .match_ul{
   background: rgb(247, 246, 246);
   list-style: none;
+  margin: 5px;
+  padding: 0;
 }
+/* }
 .match_ul:nth-of-type(odd) .match_li{
   background: rgb(221, 221, 221);
-}
+} */
 .match_li {
+  background: rgb(248, 3, 3);
   display: grid;
-  grid-template-columns:  1fr 50px 1fr 200px;
-  padding: 0px;
+  grid-template-columns:  1fr 50px 1fr;
+  grid-template-rows: 80px 50px;
 }
 .matchScore{
   background: rgb(232, 236, 9);
