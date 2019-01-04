@@ -17,35 +17,33 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.teamName{
+  font-size: calc(0.5em + 1vmin);
+}
+.matchDate {
+  font-size: calc(0.5em + 2vmin);
 
+}
 .App-link {
   color: #61dafb;
 }
 
 .match_ul{
-  list-style: none;;
+  background: rgb(247, 246, 246);
+  list-style: none;
 }
 .match_ul:nth-of-type(odd) .match_li{
-  background: rgb(205, 240, 6);
+  background: rgb(221, 221, 221);
 }
-.match_li{
-  padding: 2px;
-  background: rgb(82, 80, 80);
+.match_li {
+  display: grid;
+  grid-template-columns:  1fr 50px 1fr 200px;
+  padding: 0px;
 }
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  margin: auto;
+.matchScore{
+  background: rgb(232, 236, 9);
+  padding: 5px;
 }
-.matchScore {
-  background: #000;
-  padding-left: 5px;
-  padding-right: 5px;
-  height: 10px;
-  color: #fff;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
