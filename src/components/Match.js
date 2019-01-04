@@ -2,7 +2,6 @@ import React from 'react';
 
 
 const Match = props =>{
-
   return(
 
     <div className="flex-container">
@@ -22,9 +21,7 @@ const Match = props =>{
              <h2>
               {matchGames.match_status === "" 
                 ? `${matchGames.match_date}` 
-             : `${matchGames.match_hometeam_score}` ? `${matchGames.match_status === ""}` 
-             : `${matchGames.match_awayteam_score}`} 
-    </h2>
+             : `${matchGames.match_hometeam_score}` }</h2>
            </div>
            <div className="awayteam teamName">
              <h2> 

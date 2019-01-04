@@ -46,9 +46,9 @@ body {
   background: rgb(221, 221, 221);
 } */
 .match_li {
-  background: rgb(248, 3, 3);
+  background: rgb(194, 191, 191);
   display: grid;
-  grid-template-columns:  1fr 50px 1fr;
+  grid-template-columns:  1fr 150px 1fr;
   grid-template-rows: 80px 50px;
 }
 .matchScore{
