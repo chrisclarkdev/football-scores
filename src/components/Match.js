@@ -27,9 +27,9 @@ const Match = props =>{
              </h2>
            </div>
            {matchGames.statistics[2] !== "" ?
-            `<h5>Possession {matchGames.statistics[2]&& matchGames.statistics[2].home}%</h5>
-           <h5 className="match_status">{matchGames.match_status}</h5>
-           <h5>Possession {matchGames.statistics[2]&& matchGames.statistics[2].away}%</h5>` : "" }
+            <h5> Possession `${matchGames.statistics[2]&& matchGames.statistics[2].home}`% </h5>
+           <h5 className="match_status">`${matchGames.match_status}`</h5>
+           <h5>Possession `${matchGames.statistics[2]&& matchGames.statistics[2].away}`%</h5> : "" }
 
           </li>
         </div>
