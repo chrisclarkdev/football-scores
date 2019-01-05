@@ -22,11 +22,13 @@
 }
 
 .leagueHeading{
-  background: #282c34;
-  padding: 1px;
+  background: #f3cf05;
+  padding: 12px;
+  margin: 0;
+  margin-bottom: -6px;
 }
-.leagueHeading h3{
-  color: rgb(204, 199, 199);
+.leagueHeading h1{
+  color: rgb(61, 60, 60);
 }
 .matchDate {
   font-size: calc(0.5em + 2vmin);
@@ -41,15 +43,19 @@ body {
   margin: 5px;
   padding: 0;
 }
-/* }
+.scores h2{
+  font-size: calc(1em + 1vmin);
+
+}
 .match_ul:nth-of-type(odd) .match_li{
   background: rgb(221, 221, 221);
-} */
+}
 .match_li {
   background: rgb(194, 191, 191);
   display: grid;
   grid-template-columns:  1fr 150px 1fr;
   grid-template-rows: 80px 50px;
+  margin-top: 6px;
 }
 .matchScore{
   background: rgb(232, 236, 9);
