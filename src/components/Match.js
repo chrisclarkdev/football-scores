@@ -28,9 +28,13 @@ const Match = props =>{
                {matchGames.match_awayteam_name.split('&amp; Hove Albion')}
              </h2>
            </div>
+           <div>
+             <h5 className="match_status">
+             {matchGames.match_status}
+             </h5>
+             </div>
            {matchGames.statistics[2] && matchGames.statistics[2].home !== "" ? 
             `${matchGames.statistics[2].home}%` : "" } 
-           <h5 className="match_status">{matchGames.match_status}</h5>
            {matchGames.statistics[2] && matchGames.statistics[2].away !== "" ? 
             `${matchGames.statistics[2].away}%` : "" }
 

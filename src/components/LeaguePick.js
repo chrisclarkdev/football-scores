@@ -6,7 +6,7 @@ const LeaguePick = () => {
 
     <header style={{backgroundColor: "orange"}}>
       <div className="picker">
-
+  var x = 0;
     <form>
       <select  className= "selector"id="mySelect">
         <option value="62">Premier League</option>
@@ -15,7 +15,6 @@ const LeaguePick = () => {
         <option value="69">F A Cup</option>
       </select>
     </form>
-
       </div>
     </header>
   );
