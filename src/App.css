@@ -1,12 +1,24 @@
 .App {
   text-align: center;
+  max-width: 800px;
+  margin: auto;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
 }
-
+.selector{
+  height: 30px;
+  width: 200px;
+  position: relative;
+  left: 0px;
+}
+.picker{
+  display: flex;
+  justify-content: flex-start;
+  padding: 6px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 10vh;
@@ -20,12 +32,12 @@
 .teamName{
   font-size: calc(0.5em + 1vmin);
 }
-
 .leagueHeading{
   background: #f3cf05;
   padding: 12px;
-  margin: 0;
-  margin-bottom: -6px;
+  margin: auto;
+  margin-bottom: -2px;
+  box-shadow: 0px 1px 2px #444;
 }
 .leagueHeading h1{
   color: rgb(61, 60, 60);
