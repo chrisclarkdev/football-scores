@@ -1,20 +1,32 @@
 import React from "react";
 
-const LeaguePick = () => {
-  return (
-    <header style={{ backgroundColor: "orange" }}>
-      <div className="picker">
+class LeaguePick extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { value: "" };
+
+    this.handleChange = this.handleChange.bind(this);
+  }
+  handleChange(e) {
+    this.setState({ value: e.target.value });
+    console.log(this.state.value);
+  }
+  render() {
+    return (
+      <header style={{ backgroundColor: "orange" }}>
         <form>
-          <select className="selector" id="mySelect">
-            <option value="62">Premier League</option>
-            <option value="63">Championship</option>
-            <option value="64">League 1</option>
-            <option value="69">F A Cup</option>
-          </select>
+          <label className="picker">
+            <select value={this.state.value} onChange={this.handleChange}>
+              <option value="62 Premier">Premier League</option>
+              <option value="63 Championship">Championship</option>
+              <option value="64 League 1">League 1</option>
+              <option value="69 FA Cup">FA Cup</option>
+            </select>
+          </label>
         </form>
-      </div>
-    </header>
-  );
-};
+      </header>
+    );
+  }
+}
 
 export default LeaguePick;
